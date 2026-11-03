@@ -39,11 +39,7 @@ pip install \
 ```
 
 `secpat-scoring` pins `secpat-interaction-order` by name, and pip cannot resolve that from
-an index, so both URLs go in.
-
-The repo is **private**, so this needs GitHub credentials. For local work,
-`gh auth login && gh auth setup-git` makes the plain https URL resolve; in Docker, pass a
-token as a BuildKit secret rather than baking it into a layer.
+an index, so both URLs go in. Both repositories are public; no credentials are needed.
 
 ## Parser pinning
 
@@ -66,3 +62,7 @@ pytest
 
 `tests/fixtures/level2_expected.json` pins Level 2 to known-good numbers on a small
 sample app; it is the regression check for the containment index and the formula.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
