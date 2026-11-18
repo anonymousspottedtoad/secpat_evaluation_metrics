@@ -66,12 +66,13 @@ calls it once per side and compares the two results.
 
 ```bash
 pip install \
-  "secpat-interaction-order @ git+https://github.com/anonymousspottedtoad/secpat_interaction_recovery.git@v0.1.0" \
-  "secpat-scoring @ git+https://github.com/anonymousspottedtoad/secpat_evaluation_metrics.git@v0.23.0"
+  "secpat-interaction-order @ git+https://github.com/anonymousspottedtoad/secpat_interaction_recovery.git@v0.2.0" \
+  "secpat-scoring @ git+https://github.com/anonymousspottedtoad/secpat_evaluation_metrics.git@v0.23.1"
 ```
 
-`secpat-scoring` pins `secpat-interaction-order` by name, and pip cannot resolve that from
-an index, so both URLs go in. Both repositories are public; no credentials are needed.
+`secpat-scoring` requires `secpat-interaction-order` by name (0.1.0 or 0.2.0, which derive
+the same orders), and pip cannot resolve that from an index, so both URLs go in. Both
+repositories are public; no credentials are needed.
 
 ## Parser pinning
 
